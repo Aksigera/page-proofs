@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../SASS-grid/grid.css">
+    <!--<link rel="stylesheet" href="../SASS-grid/grid.css">-->
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 </head>
@@ -30,39 +30,40 @@
 </ul>
 <div class="banner">
     <div class="banner__image">
+        <input type="radio" name="banner__switcher" class="submenu-li__radio" id="submenu-li__radio1" checked>
+        <input type="radio" name="banner__switcher" class="submenu-li__radio" id="submenu-li__radio2">
+        <input type="radio" name="banner__switcher" class="submenu-li__radio" id="submenu-li__radio3">
+        <input type="radio" name="banner__switcher" class="submenu-li__radio" id="submenu-li__radio4">
 
-        <div class="banner__image--1"><h1>Fusce vitae nibh quis diam fermentum</h1>
+        <div class="banner__image--1"><h1>Fusce vitae nibh quis diam 1</h1>
 
-            <p>Etiam adipiscing ultricies commodo.</p>
+            <p>Etiam adipiscing ultricies first.</p>
         </div>
-        <div class="banner__image--2"><h1>Fusce vitae nibh quis diam fermentum</h1>
+        <div class="banner__image--2"><h1>Fusce vitae nibh quis diam 2</h1>
 
-            <p>Etiam adipiscing ultricies commodo.</p>
+            <p>Etiam adipiscing ultricies second.</p>
         </div>
-        <div class="banner__image--3"><h1>Fusce vitae nibh quis diam fermentum</h1>
+        <div class="banner__image--3"><h1>Fusce vitae nibh quis diam 3</h1>
 
-            <p>Etiam adipiscing ultricies commodo.</p>
+            <p>Etiam adipiscing ultricies third.</p>
         </div>
-        <div class="banner__image--4"><h1>Fusce vitae nibh quis diam fermentum</h1>
+        <div class="banner__image--4"><h1>Fusce vitae nibh quis diam 4</h1>
 
-            <p>Etiam adipiscing ultricies commodo.</p>
+            <p>Etiam adipiscing ultricies fourth.</p>
         </div>
 
     </div>
-    <ul class="banner__navbar">
-        <li class="submenu-li">
-            <div class="submenu-li__icon" id="submenu-li--1">1</div>
-            Lorem ipsum dolor
-        <li class="submenu-li">
-            <div class="submenu-li__icon" id="submenu-li--2">2</div>
-            Lorem ipsum
-        <li class="submenu-li">
-            <div class="submenu-li__icon" id="submenu-li--3">3</div>
-            Lorem ipsum dolor
-        <li class="submenu-li">
-            <div class="submenu-li__icon" id="submenu-li--4">4</div>
-            Lorem ipsum
-    </ul>
+    <div class="banner__navbar">
+        <label for="submenu-li__radio1" class="submenu-li">
+            <div class="submenu-li__icon">1</div>
+            Lorem ipsum dolor</label><label for="submenu-li__radio2" class="submenu-li">
+            <div class="submenu-li__icon">2</div>
+            Lorem ipsum</label><label for="submenu-li__radio3" class="submenu-li">
+            <div class="submenu-li__icon">3</div>
+            Lorem ipsum dolor</label><label for="submenu-li__radio4" class="submenu-li">
+            <div class="submenu-li__icon">4</div>
+            Lorem ipsum</label></ul>
+    </div>
 </div>
 
 </body>
