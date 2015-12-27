@@ -1,0 +1,76 @@
+$pink-bg: #f4ade2;
+$card-color: yellow;
+html {
+  min-height: 100%;
+  background: url("../images/snowflakes.png"), $pink-bg;
+  animation: snow 5s linear infinite;
+}
+
+@keyframes snow {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 172px;
+  }
+}
+
+body {
+
+}
+
+.clear {
+  clear: both;
+  display: none;
+}
+
+.grid {
+  margin: auto;
+  overflow: hidden;
+}
+
+.wrapper {
+  @extend .grid;
+  min-width: 300px;
+  max-width: 90%;
+}
+
+.card {
+  max-width: 40%;
+  min-width: 150px;
+  max-height: 400px;
+  overflow: hidden;
+  &__column--primary {
+    padding: 0 20px;
+    width: 80%;
+    float: left;
+  }
+  &__column--secondary {
+    float: left;
+    width: 20%;
+    background-color: $card-color;
+    &:hover{
+      background-color: #d0d0d0;
+    }
+  }
+  &__article-header{
+    font-family: 'Poiret One', serif;
+    color: red;
+    text-shadow: #000000 0 0 20px, #000000 0 0 10px, #ffffff 0 0 5px, #000000 0 0 2px;
+    z-index: 10;
+    position: relative;
+    font-size: 3.5vw;
+    text-align: center;
+    vertical-align: text-top;
+    background-color: $card-color;
+  }
+  &__img{
+    max-width: 100%;
+    margin: auto;
+  }
+  &__article-description{
+    background-color: $card-color;
+    margin: -5px 0 0;
+  }
+
+}

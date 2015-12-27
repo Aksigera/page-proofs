@@ -1,0 +1,217 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+      %title
+      %link{:href => "reset.css", :rel => "stylesheet"}
+        %link{:href => "styles.css", :rel => "stylesheet"}
+          %link{:href => "SASS-grid/grid.css", :rel => "stylesheet"}
+            %link{:href => 'https://fonts.googleapis.com/css?family=Oswald:400,300', :rel => "stylesheet", :type => 'text/css'}
+  %body
+    .topline
+    .header
+      .logo.logo--header
+        .logo__square.logo--header__square
+        %p.logo__text.logo--header__text whitesquare
+      %form.search
+        %button{:name => "search__submit"} GO
+        %input{:name => "search__input", :placeholder => "Search", :type => "text"}
+    %ul.navbar
+      %li.navbar__li
+        %a{:href => "#"} HOME
+        %li.navbar__li
+          %a{:href => "#"} ABOUT US
+          %li.navbar__li
+            %a{:href => "#"} SERVICES
+            %li.navbar__li
+              %a{:href => "#"} PARTNERS
+              %li.navbar__li
+                %a{:href => "#"} CUSTOMERS
+                %li.navbar__li
+                  %a{:href => "#"} PROJECTS
+                  %li.navbar__li
+                    %a{:href => "#"} CAREERS
+                    %li.navbar__li
+                      %a{:href => "#"} CONTACT
+    .banner
+      .banner__image
+        %input#submenu-li__radio1.submenu-li__radio{:checked => "", :name => "banner__switcher", :type => "radio"}
+          %input#submenu-li__radio2.submenu-li__radio{:name => "banner__switcher", :type => "radio"}
+            %input#submenu-li__radio3.submenu-li__radio{:name => "banner__switcher", :type => "radio"}
+              %input#submenu-li__radio4.submenu-li__radio{:name => "banner__switcher", :type => "radio"}
+                .banner__image--1
+                  %h1 Fusce vitae nibh quis diam 1
+                  %p Etiam adipiscing ultricies first.
+                .banner__image--2
+                  %h1 Fusce vitae nibh quis diam 2
+                  %p Etiam adipiscing ultricies second.
+                .banner__image--3
+                  %h1 Fusce vitae nibh quis diam 3
+                  %p Etiam adipiscing ultricies third.
+                .banner__image--4
+                  %h1 Fusce vitae nibh quis diam 4
+                  %p Etiam adipiscing ultricies fourth.
+      .banner__navbar.inline-block
+        %label.submenu-li.inline-element{:for => "submenu-li__radio1"}
+          .submenu-li__icon 1
+          Lorem ipsum dolor
+        %label.submenu-li.inline-element{:for => "submenu-li__radio2"}
+          .submenu-li__icon 2
+          Lorem ipsum
+        %label.submenu-li.inline-element{:for => "submenu-li__radio3"}
+          .submenu-li__icon 3
+          Lorem ipsum dolor
+        %label.submenu-li.inline-element{:for => "submenu-li__radio4"}
+          .submenu-li__icon 4
+          Lorem ipsum
+    .content
+      .grid__container
+        .content-block.container__col--1-2
+          .content-block__header
+            .content-block__header__square
+            %p.content-block__header__p ABOUT WHITESQUARE
+            .content-block__header__hatching
+          .content-block__image
+          .content-block__text
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut
+              culpa
+              dignissimos laudantium minima minus molestias natus officiis, quaerat, quas, tempora veniam vero
+              voluptatum.
+              Amet animi blanditiis debitis distinctio, dolores, explicabo inventore necessitatibus optio pariatur qui
+              quidem repudiandae soluta vero!
+            %a.content-block__caption Read more
+        .content-block.container__col--1-2
+          .content-block__header
+            .content-block__header__square
+            %p.content-block__header__p A WORD FROM OUR CEO
+            .content-block__header__hatching
+          .content-block__image
+          .content-block__text
+            %p
+              %i
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut
+                culpa dignissimos laudantium minima minus molestias natus officiis, quaerat, quas, tempora veniam vero
+                voluptatum. Amet animi blanditiis debitis distinctio, dolores, explicabo inventore necessitatibus optio
+                pariatur qui quidem repudiandae soluta vero!
+            %span.content-block__caption Yane Naumoski, CEO
+      .grid__container
+        .content-block.container__col--1-3
+          .content-block__header
+            .content-block__header__square
+            %p.content-block__header__p SERVICES
+            .content-block__header__hatching
+          .content-block__text
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              aut
+              culpa
+              dignissimos laudantium minima minus molestias natus officiis, quaerat, quas, tempora veniam vero
+              voluptatum.
+              Amet animi blanditiis debitis distinctio, dolores, explicabo inventore necessitatibus optio pariatur
+              qui
+              quidem repudiandae soluta vero!
+            %a.content-block__caption Read more
+        .content-block.container__col--1-3
+          .content-block__header
+            .content-block__header__square
+            %p.content-block__header__p OUR TEAMS
+            .content-block__header__hatching
+          .content-block__team.team
+            .content-block__image
+            .content-block__text
+              %span LOREM IPSUM
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet adipisicing.
+          .content-block__team.team
+            .content-block__image
+            .content-block__text
+              %span LOREM IPSUM
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet adipisicing.
+          .content-block__team.team
+            .content-block__image
+            .content-block__text
+              %span LOREM IPSUM
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet adipisicing.
+        .content-block.container__col--1-3
+          .content-block__header
+            .content-block__header__square
+            %p.content-block__header__p 24/7/365 SUPPORT
+            .content-block__header__hatching
+          .content-block__text
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              aut
+              culpa
+              dignissimos laudantium minima minus molestias natus officiis, quaerat, quas, tempora veniam vero
+              voluptatum.
+              Amet animi blanditiis debitis distinctio, dolores, explicabo inventore necessitatibus optio pariatur
+              qui
+              quidem repudiandae soluta vero!
+            %a.content-block__caption Read more
+      .grid__container
+        .content-block
+          .content-block__header
+            .content-block__header__square
+            %p.content-block__header__p OUR CLIENTS
+            .content-block__header__hatching
+          .clients.inline-block
+            %a#client1{:href => "#"}
+            %a#client2{:href => "#"}
+            %a#client3{:href => "#"}
+            %a#client4{:href => "#"}
+            %a#client5{:href => "#"}
+            %a#client6{:href => "#"}
+            %a#client7{:href => "#"}
+    .footer
+      .block
+        .twitter-feed.content-block
+          .content-block__header__p
+            TWITTER FEED
+          %hr
+          .content-block__text
+            %a{:href => "#"} 23 oct
+            %br
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dignissimos et excepturi hic ipsum
+            molestias, odio reiciendis saepe sed temporibus
+        .sitemap
+          .content-block__header__p
+            SITEMAP
+          %hr
+          .overflow--hidden
+            %ul
+              %li
+                %a{:href => "#"}Home
+              %li
+                %a{:href => "#"}About
+              %li
+                %a{:href => "#"}Services
+            %ul
+              %li
+                %a{:href => "#"}Partners
+              %li
+                %a{:href => "#"}Support
+              %li
+                %a{:href => "#"}Contact
+        .social-networks
+          .content-block__header__p
+            SOCIAL NETWORKS
+          %hr
+          %a.high{:href => "#"}
+          %a.high{:href => "#"}
+          %a.high{:href => "#"}
+          %br
+          %a.low{:href => "#"}
+          %a.low{:href => "#"}
+          %a.low{:href => "#"}
+          %a.low{:href => "#"}
+          %a.low{:href => "#"}
+
+        .copyright
+          .logo.logo--footer
+            .logo__square.logo--footer__square
+            %p.logo__text.logo--footer__text whitesquare
+          .copyright__text
+            Copyright &#169; 2012 Whitesquare. A
+            %a{:href => "#"} pclab
+            creation
+        .clear

@@ -1,0 +1,55 @@
+html {
+  min-height: 100%;
+  background: url("../images/snowflakes.png"), #f4ade2;
+  animation: snow 5s linear infinite; }
+
+@keyframes snow {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 172px; } }
+.clear {
+  clear: both;
+  display: none; }
+
+.grid, .wrapper {
+  margin: auto;
+  overflow: hidden; }
+
+.wrapper {
+  min-width: 300px;
+  max-width: 90%; }
+
+.card {
+  max-width: 40%;
+  min-width: 150px;
+  max-height: 400px;
+  overflow: hidden; }
+  .card__column--primary {
+    padding: 0 20px;
+    width: 80%;
+    float: left; }
+  .card__column--secondary {
+    float: left;
+    width: 20%;
+    background-color: yellow; }
+    .card__column--secondary:hover {
+      background-color: #d0d0d0; }
+  .card__article-header {
+    font-family: 'Poiret One', serif;
+    color: red;
+    text-shadow: #000000 0 0 20px, #000000 0 0 10px, #ffffff 0 0 5px, #000000 0 0 2px;
+    z-index: 10;
+    position: relative;
+    font-size: 3.5vw;
+    text-align: center;
+    vertical-align: text-top;
+    background-color: yellow; }
+  .card__img {
+    max-width: 100%;
+    margin: auto; }
+  .card__article-description {
+    background-color: yellow;
+    margin: -5px 0 0; }
+
+/*# sourceMappingURL=style.css.map */
