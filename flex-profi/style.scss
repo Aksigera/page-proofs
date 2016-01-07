@@ -43,46 +43,46 @@ $height-rightmenu__submenu__button: 50px;
   order: $val;
 }
 
-.colorpicker {
-  width: 100%;
-  overflow: hidden;
-  .colorpicker__option--rainbow:focus ~ .colorpicker__option {
-    height: 20px;
-  }
-  &__option {
-    width: 100%;
-    height: 0;
-    cursor: pointer;
-    &--rainbow {
-      height: 20px;
-      display: block;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      background: linear-gradient(to right, red, orange, yellow, lawngreen, deepskyblue, blueviolet);
-    }
-    &--rainbow:focus {
-      background: transparent;
-      border: none;
-      outline: none;
-      cursor: default;
-    }
-    &--green {
-      background-color: #17b43d;
-    }
-    &--red {
-      background-color: $red;
-    }
-    &--blue {
-      background-color: deepskyblue;
-    }
-    &--brown {
-      background-color: #65261a;
-    }
-    &--pink {
-      background-color: deeppink;
-    }
-  }
-}
+//.colorpicker {
+//  width: 100%;
+//  overflow: hidden;
+//  .colorpicker__option--rainbow:focus ~ .colorpicker__option {
+//    height: 20px;
+//  }
+//  &__option {
+//    width: 100%;
+//    height: 0;
+//    cursor: pointer;
+//    &--rainbow {
+//      height: 20px;
+//      display: block;
+//      border-bottom-left-radius: 5px;
+//      border-bottom-right-radius: 5px;
+//      background: linear-gradient(to right, red, orange, yellow, lawngreen, deepskyblue, blueviolet);
+//    }
+//    &--rainbow:focus {
+//      background: transparent;
+//      border: none;
+//      outline: none;
+//      cursor: default;
+//    }
+//    &--green {
+//      background-color: #17b43d;
+//    }
+//    &--red {
+//      background-color: $red;
+//    }
+//    &--blue {
+//      background-color: deepskyblue;
+//    }
+//    &--brown {
+//      background-color: #65261a;
+//    }
+//    &--pink {
+//      background-color: deeppink;
+//    }
+//  }
+//}
 
 html {
   min-height: 100%;
@@ -112,7 +112,7 @@ html {
     background-position: 0 0;
   }
   to {
-    background-position: 0 650px;
+    background-position: 0 662px;
   }
 }
 
@@ -121,7 +121,7 @@ html {
     background-position: 200px 0;
   }
   to {
-    background-position: 200px 650px;
+    background-position: 200px 662px;
   }
 }
 
@@ -238,109 +238,21 @@ body {
       width: auto;
       left: 20px;
       top: 38px;
-       a {
-         padding: 8px;
-         line-height: 30px;
-         display: inline-block;
-         color: grey;
-         font-family: sans-serif;
-         font-weight: 700;
-         font-size: 90%;
-       }
-       a:last-child {
-         color: $red;
-       }
-     }
+      a {
+        padding: 8px;
+        line-height: 30px;
+        display: inline-block;
+        color: grey;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 90%;
+      }
+      a:last-child {
+        color: $red;
+      }
+    }
   }
 }
-
-//.banner {
-//  @include flexbox();
-//  flex-wrap: wrap;
-//  &__image {
-//    //flex: auto;
-//    background-color: $midgray;
-//    height: 280px;
-//    overflow: hidden;
-//    &--1, &--2, &--3, &--4 {
-//      min-width: 800px;
-//      transition-property: left;
-//      transition-delay: 1s;
-//      transition-duration: 0s;
-//      left: -100%;
-//      z-index: 1;
-//      position: relative;
-//      padding: 40px;
-//      height: 100%;
-//      width: 100%;
-//      background: url("http://www.bodycorepilates.co.uk/wp-content/uploads/2014/03/5.jpg") no-repeat;
-//    }
-//
-//    &--2 {
-//      top: -100%;
-//    }
-//    &--3 {
-//      top: -200%;
-//    }
-//    &--4 {
-//      top: -300%;
-//    }
-//    h1 {
-//      color: $darkgray-text;
-//      font-size: 250%;
-//    }
-//    p {
-//      color: #1493ae;
-//    }
-//  }
-//  &__navbar {
-//    @include flexbox();
-//    flex-wrap: wrap;
-//    background-color: $lightgray;
-//    border-bottom: solid $midgray 1px;
-//  }
-//
-//}
-//
-//.submenu-li {
-//  display: block;
-//  width: $width-body/4;
-//  height: $banner__navbar--height;
-//  color: $darkgray;
-//  font-size: 120%;
-//  padding: 10px 12px 16px;
-//  cursor: pointer;
-//  //font-family: 'Oswald', 'Tahoma', sans-serif;
-//  &:hover {
-//    color: $blue;
-//  }
-//
-//  &__icon {
-//    display: inline-block;
-//    margin-right: 12px;
-//    background-color: lighten($darkgray, 10%);
-//    color: white;
-//    width: 24px;
-//    height: 24px;
-//    line-height: 24px;
-//    text-align: center;
-//  }
-//  &:hover &__icon {
-//    background-color: $blue;
-//  }
-//}
-//
-//.submenu-li__radio {
-//  display: none;
-//}
-//
-//#submenu-li__radio1:checked ~ .banner__image--1, #submenu-li__radio2:checked ~ .banner__image--2, #submenu-li__radio3:checked ~ .banner__image--3, #submenu-li__radio4:checked ~ .banner__image--4 {
-//  left: 0;
-//  transition-property: left;
-//  transition-duration: 0.5s;
-//  transition-delay: 0s;
-//  z-index: 10;
-//}
 
 .main {
   @include flexbox();
@@ -351,6 +263,8 @@ body {
     flex-grow: 4;
     flex-basis: 78%;
     flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
   }
   .main__rightmenu {
     flex-basis: 22%;
@@ -363,25 +277,25 @@ body {
   left: 7px;
   margin: 0 0 0 10px;
   &__button {
-     position: relative;
-     display: block;
-     border: solid 2px $red;
-     margin: 0 0 -2px 0;
-     height: $height-rightmenu__button;
-     cursor: pointer;
-     text-align: center;
-     font-size: 160%;
-     font-family: 'Poiret One', sans-serif;
-     color: #000;
-     line-height: $height-rightmenu__button;
-     border-top-left-radius: 20px;
-     border-bottom-left-radius: 20px;
-     //border-top: solid 2px $red;
-     -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
-     -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
-     box-shadow: 3px 4px 10px black, inset -5px -1px 2px $red;
-   }
-  &__button:hover{
+    position: relative;
+    display: block;
+    border: solid 2px $red;
+    margin: 0 0 -2px 0;
+    height: $height-rightmenu__button;
+    cursor: pointer;
+    text-align: center;
+    font-size: 160%;
+    font-family: 'Poiret One', sans-serif;
+    color: #000;
+    line-height: $height-rightmenu__button;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    //border-top: solid 2px $red;
+    -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
+    -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
+    box-shadow: 3px 4px 10px black, inset -5px -1px 2px $red;
+  }
+  &__button:hover {
     font-size: 180%;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
@@ -396,15 +310,15 @@ body {
       max-height: 300px;
       display: block;
       z-index: 10;
-      -webkit-transition: max-height 1s ease .4s;
-      -moz-transition: max-height 1s ease .4s;
-      -o-transition: max-height 1s ease .4s;
-      transition: max-height 1s ease .4s;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s;
     }
   }
   &__submenu {
     position: absolute;
-    left: 13px;//fgdgfdgdf
+    left: 13px; //fgdgfdgdf
     z-index: 3;
     //width: 100%;
     width: 95%;
@@ -417,7 +331,7 @@ body {
     &__button {
       padding: 0 0 0 10px;
       margin: -2px 0 0;
-      background:linear-gradient(white, #afafaf);
+      background: linear-gradient(white, #afafaf);
       height: $height-rightmenu__submenu__button;
       @extend .rightmenu__button;
       line-height: $height-rightmenu__submenu__button;
@@ -430,12 +344,10 @@ body {
 }
 
 .card {
-  @include flexbox();
   border: dashed #cc1200 2px;
   margin: 5px;
-  max-width: 30%;
-  min-width: 300px;
-  height: 400px;
+  min-width: 160px;
+  flex-basis: 23%;
   &:hover {
     -webkit-box-shadow: 4px 3px 10px grey;
     -moz-box-shadow: 4px 3px 10px grey;
@@ -455,47 +367,68 @@ body {
   }
 
   &__primary-side {
-    @include flexbox();
-    flex-direction: column;
-    flex-grow: 1;
+    //@include flexbox();
+    //flex-direction: column;
+    position: relative;
     .card__header {
       white-space: nowrap;
       font-family: 'Poiret One', sans-serif;
       color: red;
       text-shadow: #000000 0 0 15px, #000000 0 0 8px, #000000 0 0 5px, red 0 0 1px, red 0 0 1px, red 0 0 1px, red 0 0 1px, red 0 0 1px;
       z-index: 4;
-      position: relative;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      border-radius: 20px;
       max-width: 100%;
-      padding: 10px 0 0 70px;
       font-size: 150%;
-      line-height: 40px;
-      text-align: center;
+      padding: 10px;
+      text-align: end;
       vertical-align: text-top;
       background-color: $card-color;
     }
     .card__image {
       max-width: 100%;
-      height: 250px;
-      margin: -49px auto 10px;
+      max-height: 250px;
+      margin: 0 auto 10px;
+      display: block;
+      image-rendering: -webkit-optimize-contrast;
     }
-    .card__bottom{
-      @include flexbox();
-      .card__description {
-        flex-basis: 80%;
-        flex-grow: 1;
-        font-size: 120%;
-        text-align: center;
-        letter-spacing: 0.12em;
-        padding: 0 20px 15px;
-        line-height: 90%;
-      }
-      .card__buttons{
-        flex-basis: 20%;
-        flex-grow: 1;
-      }
-    }
-
   }
+  .card__bottom {
+    @include flexbox();
+    .card__description {
+      flex-basis: 80%;
+      flex-grow: 1;
+      font-size: 1.5vmin;
+      text-align: center;
+      letter-spacing: 0.12em;
+      padding: 0 5% 5%;
+      line-height: 90%;
+    }
+    .card__buttons {
+      flex-basis: 20%;
+      flex-grow: 1;
+      button{
+        background-color: white;
+        border-radius: 5px;
+        border: #830000 2px solid;
+        -webkit-box-shadow: 0 4px 3px black;
+        -moz-box-shadow: 0 4px 3px black;
+        box-shadow: 0 2px 4px black;
+        margin: 0 0 10px;
+        padding: 3px;
+      }
+      .secondary-side__buy{
+        border-radius: 10px;
+        border: #c30000 3px solid;
+        font-family: "Lobster", cursive;
+        font-size: 120%;
+        background: linear-gradient(-30deg,white, #ff3e3f,white,white);
+      }
+    }
+  }
+
   //&__secondary-side {
   //  position: relative;
   //  z-index: 5;
@@ -563,34 +496,35 @@ body {
   //  }
   //}
 }
-.article{
+
+.article {
   @include flexbox();
   flex-basis: 80%;
   flex-grow: 0;
-  &__img{
+  &__img {
     flex-basis: 50%;
     flex-grow: 2;
-    img{
+    img {
       max-width: 100%;
       max-height: 100%;
       height: auto;
     }
   }
-  &__text{
+  &__text {
     flex-basis: 50%;
     flex-grow: 2;
     font-family: "Tahoma", sans-serif;
     //background-color: yellow;
-    h1{
+    h1 {
       font-size: 300%;
       margin: 25px 30px 5px 0;
 
     }
-    h2{
+    h2 {
       font-size: 270%;
       margin: 25px 30px 5px 0;
     }
-    p{
+    p {
       margin: 25px 30px 5px 0;
     }
   }
@@ -598,16 +532,36 @@ body {
 }
 
 .footer {
-  &__navbar{
-    a{
+  padding: 12px;
+  background-color: #f7f7f7;
+  &__navbar {
+    a {
       color: red;
       font-weight: 700;
     }
     @include flexbox();
     justify-content: space-between;
-    &--center{
-      a{
+    &--center {
+      a {
 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body{
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .card {
+    min-width: 30%;
+    max-width: 90%;
+    flex-basis: 80%;
+    .card__bottom {
+      .card__description {
+        font-family: "Tahoma", sans-serif;
+        font-size: 180%;
       }
     }
   }
