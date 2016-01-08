@@ -2,11 +2,12 @@ $pink-bg: #ffbdc6;
 $card-color: rgba(255, 255, 255, 0.6);
 $red: #b20019;
 $color-arrow: #ff7c57;
-$color-active:rgba(255, 0, 102, 0.36);
+$color-active: rgba(255, 0, 102, 0.36);
 $height-navbut: 35px;
 $banner__navbar--height: 50px;
 $height-rightmenu__button: 40px;
 $height-rightmenu__submenu__button: 35px;
+$height-rightmenu__button--phone: 60px;
 
 //лишние переменные begin
 //$width-body: 980px;
@@ -148,6 +149,25 @@ body {
     background-size: 100% 250%; /* Современные браузеры */
     height: 130px;
     overflow: hidden;
+    .basket{
+      float: left;
+      background: whitesmoke;
+      -webkit-box-shadow:  1px 1px 5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow:  1px 1px 5px  rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0 0 7px #111;
+      border-radius: 7px;
+      margin: 12px;
+      padding: 12px;
+      font-family: "Tahoma", sans-serif;
+      font-weight: 400;
+      a{
+        font-size: 110%;
+      }
+      span{
+        color: $red;
+        font-weight: 600;
+      }
+    }
     .search {
       float: right;
       width: 20%;
@@ -242,11 +262,13 @@ body {
 }
 
 .main {
+  top: 40px;
+  position: relative;
   .breadcrumbs {
     position: absolute;
     width: auto;
+    top: -80px;
     left: 20px;
-    top: 38px;
     a {
       padding: 8px;
       line-height: 30px;
@@ -275,12 +297,22 @@ body {
     flex-basis: 22%;
     flex-grow: 1;
   }
+  .main__header{
+    position: absolute;
+    right: 140px;
+    top: -38px;
+    width: 100%;
+    text-align: center;
+    font-family: serif;
+    font-size: 220%;
+    font-weight: 600;
+    color: #8f0000;
+  }
 }
 
 .rightmenu {
   overflow: hidden;
   position: relative;
-  left: 0px;
   margin: 0 0 0 10px;
   &__button {
     position: relative;
@@ -299,7 +331,7 @@ body {
     -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
     -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
     box-shadow: 3px 4px 10px black, inset -5px -1px 2px $red;
-    &.active{
+    &.active {
       background-color: $color-active;
       @extend .rightmenu__button:hover;
     }
@@ -326,12 +358,12 @@ body {
     }
   }
   &__submenu {
-    &.active{
+    &.active {
       position: relative;
       max-height: 600px;
     }
     position: absolute;
-    left: 13px;
+    left: 5.5%;
     z-index: 3;
     width: 95%;
     -webkit-transition: max-height 1s ease 0s;
@@ -586,9 +618,18 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
+
   body {
     max-width: 100%;
     min-width: 100%;
+  }
+  .breadcrumbs {
+    font-size: 130%;
+  }
+  .rightmenu__button {
+    font-size: 200%;
+    height: $height-rightmenu__button--phone;
+    line-height: $height-rightmenu__button--phone;
   }
   .card {
     min-width: 30%;

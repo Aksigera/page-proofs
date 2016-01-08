@@ -12,6 +12,11 @@
   %body
     .header
       .header__image
+        .basket
+          %p#amt В корзине
+          %span 1488
+          %p#sum На сумму
+          %span 100500
         %form.search
           %input{:name => "search", :type => "text", :placeholder => "Поиск здесь..."}
           %button{:type => "submit"}
@@ -50,6 +55,7 @@
         %a{:href => "#"} Вторая >
         %a{:href => "#"} Третья >
         %a{:href => "#"} Текущая
+      .main__header Лаки студии "красный ноготь"
       .main__left
         .card
           .card__primary-side
