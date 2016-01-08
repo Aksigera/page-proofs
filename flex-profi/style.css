@@ -29,6 +29,9 @@ html {
   to {
     background-position: 200px 662px; } }
 body {
+  -webkit-box-shadow: 1px 0 15px #373737;
+  -moz-box-shadow: 1px 0 15px #373737;
+  box-shadow: 1px 0 15px #373737;
   min-width: 1024px;
   max-width: 80%;
   margin: auto;
@@ -47,11 +50,11 @@ body {
     -moz-background-size: 100% 250%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100% 250%;
-    /* Safari 3.1+ и Chrome 4.0+ */
+    /* Safari 3.1+ ╨╕ Chrome 4.0+ */
     -o-background-size: 100% 250%;
     /* Opera 9.6+ */
     background-size: 100% 250%;
-    /* Современные браузеры */
+    /* ╨б╨╛╨▓╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨▒╤А╨░╤Г╨╖╨╡╤А╤Л */
     height: 130px;
     overflow: hidden; }
     .header__image .search {
@@ -168,21 +171,76 @@ body {
       -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
       -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
       transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
-    .header__navbar .navbar__breadcrumbs {
-      position: absolute;
-      width: auto;
-      left: 20px;
-      top: 38px; }
-      .header__navbar .navbar__breadcrumbs a {
-        padding: 8px;
-        line-height: 30px;
-        display: inline-block;
-        color: grey;
-        font-family: sans-serif;
-        font-weight: 700;
-        font-size: 90%; }
-      .header__navbar .navbar__breadcrumbs a:last-child {
-        color: #b20019; }
+    .header__navbar .navbar__button.group6:hover ~ .navbar__submenu.group6, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group7:hover ~ .navbar__submenu.group7, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group8:hover ~ .navbar__submenu.group8, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group9:hover ~ .navbar__submenu.group9, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group10:hover ~ .navbar__submenu.group10, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group11:hover ~ .navbar__submenu.group11, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group12:hover ~ .navbar__submenu.group12, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group13:hover ~ .navbar__submenu.group13, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group14:hover ~ .navbar__submenu.group14, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
+    .header__navbar .navbar__button.group15:hover ~ .navbar__submenu.group15, .header__navbar .navbar__submenu:hover {
+      top: 41px;
+      z-index: 2;
+      -webkit-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -moz-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      -o-transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s;
+      transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
 
 .main {
   display: -webkit-box;
@@ -191,6 +249,21 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-grow: 1; }
+  .main .breadcrumbs {
+    position: absolute;
+    width: auto;
+    left: 20px;
+    top: 38px; }
+    .main .breadcrumbs a {
+      padding: 8px;
+      line-height: 30px;
+      display: inline-block;
+      color: grey;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 90%; }
+    .main .breadcrumbs a:last-child {
+      color: #b20019; }
   .main .main__left {
     display: -webkit-box;
     display: -moz-box;
@@ -212,25 +285,27 @@ body {
   position: relative;
   left: 0px;
   margin: 0 0 0 10px; }
-  .rightmenu__button, .rightmenu__submenu__button {
+  .rightmenu__button, .rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__subsubmenu__button {
     position: relative;
     display: block;
     border: solid 2px #b20019;
     margin: 0 0 -2px 0;
-    height: 50px;
+    height: 40px;
     cursor: pointer;
     text-align: center;
-    font-size: 160%;
+    font-size: 150%;
     font-family: 'Poiret One', sans-serif;
     color: #000;
-    line-height: 50px;
+    line-height: 40px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #b20019;
     -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #b20019;
     box-shadow: 3px 4px 10px black, inset -5px -1px 2px #b20019; }
-  .rightmenu__button:hover, .rightmenu__submenu__button:hover {
-    font-size: 180%;
+    .rightmenu__button.active, .active.rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .active.rightmenu__subsubmenu__button {
+      background-color: rgba(255, 0, 102, 0.36); }
+  .rightmenu__button:hover, .rightmenu__button.active, .active.rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .active.rightmenu__subsubmenu__button, .rightmenu__submenu__button:hover, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__subsubmenu__button:hover {
+    font-size: 170%;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px #b20019;
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px #b20019;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px #b20019;
@@ -238,103 +313,127 @@ body {
     -moz-transition: all .1s ease 0s;
     -o-transition: all .1s ease 0s;
     transition: all .1s ease 0s; }
-  .rightmenu .rightmenu__button-1:hover ~ .rightmenu__submenu-1, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-1:hover ~ .rightmenu__submenu-1, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-2:hover ~ .rightmenu__submenu-2, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-2:hover ~ .rightmenu__submenu-2, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-3:hover ~ .rightmenu__submenu-3, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-3:hover ~ .rightmenu__submenu-3, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-4:hover ~ .rightmenu__submenu-4, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-4:hover ~ .rightmenu__submenu-4, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-5:hover ~ .rightmenu__submenu-5, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-5:hover ~ .rightmenu__submenu-5, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-6:hover ~ .rightmenu__submenu-6, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-6:hover ~ .rightmenu__submenu-6, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-7:hover ~ .rightmenu__submenu-7, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-7:hover ~ .rightmenu__submenu-7, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-8:hover ~ .rightmenu__submenu-8, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-8:hover ~ .rightmenu__submenu-8, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-9:hover ~ .rightmenu__submenu-9, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-9:hover ~ .rightmenu__submenu-9, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-10:hover ~ .rightmenu__submenu-10, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-10:hover ~ .rightmenu__submenu-10, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-11:hover ~ .rightmenu__submenu-11, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-11:hover ~ .rightmenu__submenu-11, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu .rightmenu__button-12:hover ~ .rightmenu__submenu-12, .rightmenu .rightmenu__submenu:hover {
-    max-height: 300px;
+  .rightmenu .rightmenu__button-12:hover ~ .rightmenu__submenu-12, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
     display: block;
     z-index: 10;
     -webkit-transition: max-height 1s ease .1s;
     -moz-transition: max-height 1s ease .1s;
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
-  .rightmenu__submenu {
+  .rightmenu .rightmenu__button-13:hover ~ .rightmenu__submenu-13, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
+    display: block;
+    z-index: 10;
+    -webkit-transition: max-height 1s ease .1s;
+    -moz-transition: max-height 1s ease .1s;
+    -o-transition: max-height 1s ease .1s;
+    transition: max-height 1s ease .1s; }
+  .rightmenu .rightmenu__button-14:hover ~ .rightmenu__submenu-14, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
+    display: block;
+    z-index: 10;
+    -webkit-transition: max-height 1s ease .1s;
+    -moz-transition: max-height 1s ease .1s;
+    -o-transition: max-height 1s ease .1s;
+    transition: max-height 1s ease .1s; }
+  .rightmenu .rightmenu__button-15:hover ~ .rightmenu__submenu-15, .rightmenu .rightmenu__submenu:hover, .rightmenu .rightmenu__submenu .rightmenu__subsubmenu:hover, .rightmenu__submenu .rightmenu .rightmenu__subsubmenu:hover {
+    max-height: 600px;
+    display: block;
+    z-index: 10;
+    -webkit-transition: max-height 1s ease .1s;
+    -moz-transition: max-height 1s ease .1s;
+    -o-transition: max-height 1s ease .1s;
+    transition: max-height 1s ease .1s; }
+  .rightmenu__submenu, .rightmenu__submenu .rightmenu__subsubmenu {
     position: absolute;
     left: 13px;
     z-index: 3;
@@ -345,16 +444,144 @@ body {
     transition: max-height 1s ease 0s;
     max-height: 0;
     overflow: hidden; }
-    .rightmenu__submenu__button {
+    .rightmenu__submenu.active, .rightmenu__submenu .active.rightmenu__subsubmenu {
+      position: relative;
+      max-height: 600px; }
+    .rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__subsubmenu__button {
+      font-size: 140%;
       padding: 0 0 0 10px;
       margin: -2px 0 0;
       background: linear-gradient(white, #afafaf);
-      height: 50px;
-      line-height: 50px;
+      height: 35px;
+      line-height: 35px;
       text-align: left;
       -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #b20019;
       -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #b20019;
       box-shadow: 3px 4px 5px black, inset -5px -1px 3px #b20019, inset 2px 1px 10px white; }
+    .rightmenu__submenu .rightmenu__submenu__button-1:hover ~ .rightmenu__subsubmenu-1, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-1:hover ~ .rightmenu__subsubmenu-1, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-2:hover ~ .rightmenu__subsubmenu-2, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-2:hover ~ .rightmenu__subsubmenu-2, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-3:hover ~ .rightmenu__subsubmenu-3, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-3:hover ~ .rightmenu__subsubmenu-3, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-4:hover ~ .rightmenu__subsubmenu-4, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-4:hover ~ .rightmenu__subsubmenu-4, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-5:hover ~ .rightmenu__subsubmenu-5, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-5:hover ~ .rightmenu__subsubmenu-5, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-6:hover ~ .rightmenu__subsubmenu-6, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-6:hover ~ .rightmenu__subsubmenu-6, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-7:hover ~ .rightmenu__subsubmenu-7, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-7:hover ~ .rightmenu__subsubmenu-7, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-8:hover ~ .rightmenu__subsubmenu-8, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-8:hover ~ .rightmenu__subsubmenu-8, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-9:hover ~ .rightmenu__subsubmenu-9, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-9:hover ~ .rightmenu__subsubmenu-9, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-10:hover ~ .rightmenu__subsubmenu-10, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-10:hover ~ .rightmenu__subsubmenu-10, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-11:hover ~ .rightmenu__subsubmenu-11, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-11:hover ~ .rightmenu__subsubmenu-11, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-12:hover ~ .rightmenu__subsubmenu-12, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-12:hover ~ .rightmenu__subsubmenu-12, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-13:hover ~ .rightmenu__subsubmenu-13, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-13:hover ~ .rightmenu__subsubmenu-13, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-14:hover ~ .rightmenu__subsubmenu-14, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-14:hover ~ .rightmenu__subsubmenu-14, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__submenu__button-15:hover ~ .rightmenu__subsubmenu-15, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-15:hover ~ .rightmenu__subsubmenu-15, .rightmenu__submenu .rightmenu__subsubmenu:hover {
+      max-height: 300px;
+      display: block;
+      z-index: 10;
+      -webkit-transition: max-height 1s ease .1s;
+      -moz-transition: max-height 1s ease .1s;
+      -o-transition: max-height 1s ease .1s;
+      transition: max-height 1s ease .1s; }
+    .rightmenu__submenu .rightmenu__subsubmenu {
+      position: relative; }
+      .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__subsubmenu__button {
+        font-size: 130%; }
 
 .card {
   border: dashed #cc1200 2px;
@@ -412,7 +639,9 @@ body {
       flex-basis: 25%;
       flex-grow: 1; }
       .card .card__bottom .card__buttons button {
+        padding: 0;
         position: relative;
+        z-index: 1000;
         background-color: white;
         border-radius: 5px;
         border: #830000 2px solid;
@@ -420,13 +649,13 @@ body {
         -moz-box-shadow: 0 4px 3px black;
         box-shadow: 0 2px 4px black;
         margin: 0 0 10px;
-        padding: 3px;
-        font-size: 2vmin; }
+        font-size: 1.5vh; }
       .card .card__bottom .card__buttons .secondary-side__buy {
+        padding: 3px;
         border-radius: 10px;
         border: #c30000 3px solid;
         font-family: "Lobster", cursive;
-        font-size: 2.5vmin;
+        font-size: 2vh;
         background: linear-gradient(-30deg, white, #ff3e3f, white, white); }
 
 .article {

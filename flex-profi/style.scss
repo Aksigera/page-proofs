@@ -2,10 +2,11 @@ $pink-bg: #ffbdc6;
 $card-color: rgba(255, 255, 255, 0.6);
 $red: #b20019;
 $color-arrow: #ff7c57;
+$color-active:rgba(255, 0, 102, 0.36);
 $height-navbut: 35px;
 $banner__navbar--height: 50px;
-$height-rightmenu__button: 50px;
-$height-rightmenu__submenu__button: 50px;
+$height-rightmenu__button: 40px;
+$height-rightmenu__submenu__button: 35px;
 
 //лишние переменные begin
 //$width-body: 980px;
@@ -126,6 +127,9 @@ html {
 }
 
 body {
+  -webkit-box-shadow: 1px 0 15px #373737;
+  -moz-box-shadow: 1px 0 15px #373737;
+  box-shadow: 1px 0 15px #373737;
   min-width: 1024px;
   max-width: 80%;
   margin: auto;
@@ -224,7 +228,7 @@ body {
         z-index: 0;
       }
     }
-    @for $i from 1 through 5 {
+    @for $i from 1 through 15 {
       .navbar__button.group#{$i}:hover ~ .navbar__submenu.group#{$i}, .navbar__submenu:hover {
         top: $height-navbut+6px;
         z-index: 2;
@@ -234,28 +238,28 @@ body {
         transition: top 0.5s cubic-bezier(.5, 1.8, .2, 0.5) 0s;
       }
     }
-    .navbar__breadcrumbs {
-      position: absolute;
-      width: auto;
-      left: 20px;
-      top: 38px;
-      a {
-        padding: 8px;
-        line-height: 30px;
-        display: inline-block;
-        color: grey;
-        font-family: sans-serif;
-        font-weight: 700;
-        font-size: 90%;
-      }
-      a:last-child {
-        color: $red;
-      }
-    }
   }
 }
 
 .main {
+  .breadcrumbs {
+    position: absolute;
+    width: auto;
+    left: 20px;
+    top: 38px;
+    a {
+      padding: 8px;
+      line-height: 30px;
+      display: inline-block;
+      color: grey;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 90%;
+    }
+    a:last-child {
+      color: $red;
+    }
+  }
   @include flexbox();
   flex-grow: 1;
   .main__left {
@@ -286,19 +290,22 @@ body {
     height: $height-rightmenu__button;
     cursor: pointer;
     text-align: center;
-    font-size: 160%;
+    font-size: 150%;
     font-family: 'Poiret One', sans-serif;
     color: #000;
     line-height: $height-rightmenu__button;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    //border-top: solid 2px $red;
     -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
     -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
     box-shadow: 3px 4px 10px black, inset -5px -1px 2px $red;
+    &.active{
+      background-color: $color-active;
+      @extend .rightmenu__button:hover;
+    }
   }
   &__button:hover {
-    font-size: 180%;
+    font-size: 170%;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
@@ -307,9 +314,9 @@ body {
     -o-transition: all .1s ease 0s;
     transition: all .1s ease 0s;
   }
-  @for $i from 1 through 12 {
+  @for $i from 1 through 15 {
     .rightmenu__button-#{$i}:hover ~ .rightmenu__submenu-#{$i}, .rightmenu__submenu:hover {
-      max-height: 300px;
+      max-height: 600px;
       display: block;
       z-index: 10;
       -webkit-transition: max-height 1s ease .1s;
@@ -319,10 +326,13 @@ body {
     }
   }
   &__submenu {
+    &.active{
+      position: relative;
+      max-height: 600px;
+    }
     position: absolute;
-    left: 13px; //fgdgfdgdf
+    left: 13px;
     z-index: 3;
-    //width: 100%;
     width: 95%;
     -webkit-transition: max-height 1s ease 0s;
     -moz-transition: max-height 1s ease 0s;
@@ -331,6 +341,7 @@ body {
     max-height: 0;
     overflow: hidden;
     &__button {
+      font-size: 140%;
       padding: 0 0 0 10px;
       margin: -2px 0 0;
       background: linear-gradient(white, #afafaf);
@@ -341,6 +352,25 @@ body {
       -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
       -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
       box-shadow: 3px 4px 5px black, inset -5px -1px 3px $red, inset 2px 1px 10px white;
+    }
+    @for $i from 1 through 15 {
+      .rightmenu__submenu__button-#{$i}:hover ~ .rightmenu__subsubmenu-#{$i}, .rightmenu__subsubmenu:hover {
+        max-height: 300px;
+        display: block;
+        z-index: 10;
+        -webkit-transition: max-height 1s ease .1s;
+        -moz-transition: max-height 1s ease .1s;
+        -o-transition: max-height 1s ease .1s;
+        transition: max-height 1s ease .1s;
+      }
+    }
+    .rightmenu__subsubmenu {
+      @extend .rightmenu__submenu;
+      position: relative;
+      .rightmenu__subsubmenu__button {
+        @extend .rightmenu__submenu__button;
+        font-size: 130%;
+      }
     }
   }
 }
@@ -411,8 +441,10 @@ body {
     .card__buttons {
       flex-basis: 25%;
       flex-grow: 1;
-      button{
+      button {
+        padding: 0;
         position: relative;
+        z-index: 1000;
         background-color: white;
         border-radius: 5px;
         border: #830000 2px solid;
@@ -420,15 +452,15 @@ body {
         -moz-box-shadow: 0 4px 3px black;
         box-shadow: 0 2px 4px black;
         margin: 0 0 10px;
-        padding: 3px;
-        font-size: 2vmin;
+        font-size: 1.5vh;
       }
-      .secondary-side__buy{
+      .secondary-side__buy {
+        padding: 3px;
         border-radius: 10px;
         border: #c30000 3px solid;
         font-family: "Lobster", cursive;
-        font-size: 2.5vmin;
-        background: linear-gradient(-30deg,white, #ff3e3f,white,white);
+        font-size: 2vh;
+        background: linear-gradient(-30deg, white, #ff3e3f, white, white);
       }
     }
   }
@@ -554,7 +586,7 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
-  body{
+  body {
     max-width: 100%;
     min-width: 100%;
   }
