@@ -135,6 +135,7 @@ body {
 }
 
 .header {
+  overflow: hidden;
   &__image {
     background: url("http://nogti.ru/public/img/upload/images/DSC_0442-1-1024x415.jpg") no-repeat;
     -moz-background-size: 100% 250%; /* Firefox 3.6+ */
@@ -273,8 +274,9 @@ body {
 }
 
 .rightmenu {
+  overflow: hidden;
   position: relative;
-  left: 7px;
+  left: 0px;
   margin: 0 0 0 10px;
   &__button {
     position: relative;
@@ -358,13 +360,13 @@ body {
     -o-transition: margin .1s ease-in-out 0s, box-shadow .1s ease-in-out 0s;
     transition: margin .1s ease-in-out 0s, box-shadow .1s ease-in-out 0s;
   }
-  &:hover .secondary-side__buy--arrow, &:hover .secondary-side__buy--title {
-    opacity: 1;
-    -webkit-transition: opacity .2s ease .2s;
-    -moz-transition: opacity .2s ease .2s;
-    -o-transition: opacity .2s ease .2s;
-    transition: opacity .2s linear .2s;
-  }
+  //&:hover .secondary-side__buy--arrow, &:hover .secondary-side__buy--title {
+  //  opacity: 1;
+  //  -webkit-transition: opacity .2s ease .2s;
+  //  -moz-transition: opacity .2s ease .2s;
+  //  -o-transition: opacity .2s ease .2s;
+  //  transition: opacity .2s linear .2s;
+  //}
 
   &__primary-side {
     //@include flexbox();
@@ -398,18 +400,19 @@ body {
   .card__bottom {
     @include flexbox();
     .card__description {
-      flex-basis: 80%;
+      flex-basis: 75%;
       flex-grow: 1;
       font-size: 1.5vmin;
       text-align: center;
       letter-spacing: 0.12em;
-      padding: 0 5% 5%;
+      padding: 0 1% 5% 5%;
       line-height: 90%;
     }
     .card__buttons {
-      flex-basis: 20%;
+      flex-basis: 25%;
       flex-grow: 1;
       button{
+        position: relative;
         background-color: white;
         border-radius: 5px;
         border: #830000 2px solid;
@@ -418,12 +421,13 @@ body {
         box-shadow: 0 2px 4px black;
         margin: 0 0 10px;
         padding: 3px;
+        font-size: 2vmin;
       }
       .secondary-side__buy{
         border-radius: 10px;
         border: #c30000 3px solid;
         font-family: "Lobster", cursive;
-        font-size: 120%;
+        font-size: 2.5vmin;
         background: linear-gradient(-30deg,white, #ff3e3f,white,white);
       }
     }
