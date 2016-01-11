@@ -57,7 +57,7 @@ body {
     /* ╨б╨╛╨▓╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨▒╤А╨░╤Г╨╖╨╡╤А╤Л */
     height: 130px;
     overflow: hidden; }
-    .header__image .basket {
+    .header__image .basket--widget {
       float: left;
       background: whitesmoke;
       -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -68,9 +68,15 @@ body {
       padding: 12px;
       font-family: "Tahoma", sans-serif;
       font-weight: 400; }
-      .header__image .basket a {
-        font-size: 110%; }
-      .header__image .basket span {
+      .header__image .basket--widget a {
+        color: #b20019;
+        text-decoration: underline;
+        font-size: 110%;
+        text-shadow: #471d20 0 0 0.5px; }
+        .header__image .basket--widget a:hover {
+          text-decoration: none;
+          text-shadow: #826570 0 0 3px; }
+      .header__image .basket--widget span {
         color: #b20019;
         font-weight: 600; }
     .header__image .search {
@@ -259,7 +265,7 @@ body {
       transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
 
 .main {
-  top: 40px;
+  top: 80px;
   position: relative;
   display: -webkit-box;
   display: -moz-box;
@@ -270,7 +276,7 @@ body {
   .main .breadcrumbs {
     position: absolute;
     width: auto;
-    top: -80px;
+    top: -120px;
     left: 20px; }
     .main .breadcrumbs a {
       padding: 8px;
@@ -299,8 +305,8 @@ body {
     flex-grow: 1; }
   .main .main__header {
     position: absolute;
-    right: 140px;
-    top: -38px;
+    right: 150px;
+    top: -58px;
     width: 100%;
     text-align: center;
     font-family: serif;
@@ -311,7 +317,8 @@ body {
 .rightmenu {
   overflow: hidden;
   position: relative;
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 10px;
+  padding: 7px 0px 25px 7px; }
   .rightmenu__button, .rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__subsubmenu__button {
     position: relative;
     display: block;
@@ -323,6 +330,7 @@ body {
     font-size: 150%;
     font-family: 'Poiret One', sans-serif;
     color: #000;
+    text-shadow: black 0 0;
     line-height: 40px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -470,7 +478,8 @@ body {
     -o-transition: max-height 1s ease 0s;
     transition: max-height 1s ease 0s;
     max-height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 0 0 0 5px; }
     .rightmenu__submenu.active, .rightmenu__submenu .active.rightmenu__subsubmenu {
       position: relative;
       max-height: 600px; }
@@ -713,9 +722,35 @@ body {
     .article__text p {
       margin: 25px 30px 5px 0; }
 
+.basket {
+  flex-grow: 4;
+  flex-basis: 78%; }
+  .basket .basket__table {
+    margin: 30px auto;
+    padding: 30px; }
+    .basket .basket__table td {
+      padding: 7px; }
+    .basket .basket__table caption {
+      text-align: center;
+      font-family: "Tahoma", sans-serif;
+      font-size: 200%;
+      color: #9a9a9a;
+      font-weight: 700;
+      padding: 5px; }
+    .basket .basket__table thead tr {
+      background-color: #cccccc; }
+    .basket .basket__table tbody input {
+      width: 50%; }
+    .basket .basket__table tbody tr:nth-child(2n+1) {
+      background-color: whitesmoke; }
+    .basket .basket__table tbody tr:nth-child(2n) {
+      background-color: #cccccc; }
+    .basket .basket__table tfoot td {
+      text-align: end; }
+
 .footer {
   padding: 12px;
-  background-color: #f7f7f7; }
+  margin: 50px 0 0; }
   .footer__navbar {
     display: -webkit-box;
     display: -moz-box;

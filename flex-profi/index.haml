@@ -13,10 +13,13 @@
     .header
       .header__image
         .basket
-          %p#amt В корзине
-          %span 1488
-          %p#sum На сумму
-          %span 100500
+          %p
+            В
+            %a{:href => "#"}корзине
+            %span#amt 1488
+            товаров на сумму
+            %span#sum 100500
+            рублей
         %form.search
           %input{:name => "search", :type => "text", :placeholder => "Поиск здесь..."}
           %button{:type => "submit"}
@@ -162,10 +165,26 @@
             %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
         %a.rightmenu__button.rightmenu__button-2 Группа 2
         .rightmenu__submenu.rightmenu__submenu-2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
+          %a.rightmenu__submenu__button.rightmenu__submenu__button-1{:href => "#"} Подгруппа 1
+          .rightmenu__subsubmenu.rightmenu__subsubmenu-1
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 1
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
+          %a.rightmenu__submenu__button.rightmenu__submenu__button-2{:href => "#"} Подгруппа 2
+          .rightmenu__subsubmenu.rightmenu__subsubmenu-2
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 1
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
+          %a.rightmenu__submenu__button.rightmenu__submenu__button-3{:href => "#"} Подгруппа 3
+          .rightmenu__subsubmenu.rightmenu__subsubmenu-3
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 1
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
+          %a.rightmenu__submenu__button.rightmenu__submenu__button-4{:href => "#"} Подгруппа 4
+          .rightmenu__subsubmenu.rightmenu__subsubmenu-4
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 1
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
+            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
         %a.rightmenu__button.rightmenu__button-3 Группа 3
         .rightmenu__submenu.rightmenu__submenu-3
           %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1

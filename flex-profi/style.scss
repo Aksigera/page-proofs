@@ -149,21 +149,28 @@ body {
     background-size: 100% 250%; /* Современные браузеры */
     height: 130px;
     overflow: hidden;
-    .basket{
+    .basket--widget {
       float: left;
       background: whitesmoke;
-      -webkit-box-shadow:  1px 1px 5px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow:  1px 1px 5px  rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
       box-shadow: inset 0 0 7px #111;
       border-radius: 7px;
       margin: 12px;
       padding: 12px;
       font-family: "Tahoma", sans-serif;
       font-weight: 400;
-      a{
+      a {
+        color: $red;
+        text-decoration: underline;
         font-size: 110%;
+        text-shadow: #471d20 0 0 0.5px;
+        &:hover {
+          text-decoration: none;
+          text-shadow: #826570 0 0 3px;
+        }
       }
-      span{
+      span {
         color: $red;
         font-weight: 600;
       }
@@ -262,12 +269,12 @@ body {
 }
 
 .main {
-  top: 40px;
+  top: 80px;
   position: relative;
   .breadcrumbs {
     position: absolute;
     width: auto;
-    top: -80px;
+    top: -120px;
     left: 20px;
     a {
       padding: 8px;
@@ -297,10 +304,10 @@ body {
     flex-basis: 22%;
     flex-grow: 1;
   }
-  .main__header{
+  .main__header {
     position: absolute;
-    right: 140px;
-    top: -38px;
+    right: 150px;
+    top: -58px;
     width: 100%;
     text-align: center;
     font-family: serif;
@@ -314,6 +321,7 @@ body {
   overflow: hidden;
   position: relative;
   margin: 0 0 0 10px;
+  padding: 7px 0px 25px 7px;
   &__button {
     position: relative;
     display: block;
@@ -325,6 +333,7 @@ body {
     font-size: 150%;
     font-family: 'Poiret One', sans-serif;
     color: #000;
+    text-shadow: black 0 0;
     line-height: $height-rightmenu__button;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -372,6 +381,7 @@ body {
     transition: max-height 1s ease 0s;
     max-height: 0;
     overflow: hidden;
+    padding: 0 0 0 5px;
     &__button {
       font-size: 140%;
       padding: 0 0 0 10px;
@@ -596,12 +606,53 @@ body {
       margin: 25px 30px 5px 0;
     }
   }
+}
 
+.basket {
+  flex-grow: 4;
+  flex-basis: 78%;
+  .basket__table {
+    margin: 30px auto;
+    padding: 30px;
+    td {
+      padding: 7px;
+    }
+    caption {
+      text-align: center;
+      font-family: "Tahoma", sans-serif;
+      font-size: 200%;
+      color: #9a9a9a;
+      font-weight: 700;
+      padding: 5px;
+    }
+    thead {
+      tr {
+        background-color: #cccccc;
+      }
+    }
+    tbody {
+      input {
+        width: 50%;
+      }
+      tr:nth-child(2n+1) {
+        background-color: whitesmoke;
+      }
+      tr:nth-child(2n) {
+        background-color: #cccccc;
+      }
+    }
+    tfoot {
+      td {
+        text-align: end;
+      }
+    }
+  }
 }
 
 .footer {
   padding: 12px;
-  background-color: #f7f7f7;
+  margin: 50px 0 0;
+  //background-color: #f7f7f7;
   &__navbar {
     a {
       color: red;
@@ -643,3 +694,4 @@ body {
     }
   }
 }
+
