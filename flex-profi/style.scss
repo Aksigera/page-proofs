@@ -44,6 +44,9 @@ $height-rightmenu__button--phone: 60px;
   -webkit-order: $val;
   order: $val;
 }
+.text-align--start{
+  text-align: start;
+}
 
 //.colorpicker {
 //  width: 100%;
@@ -128,6 +131,7 @@ html {
 }
 
 body {
+  min-height: 100%;
   -webkit-box-shadow: 1px 0 15px #373737;
   -moz-box-shadow: 1px 0 15px #373737;
   box-shadow: 1px 0 15px #373737;
@@ -320,7 +324,7 @@ body {
 .rightmenu {
   overflow: hidden;
   position: relative;
-  margin: 0 0 0 10px;
+  margin: -80px 0 0 10px;
   padding: 7px 0px 25px 7px;
   &__button {
     position: relative;
@@ -337,9 +341,9 @@ body {
     line-height: $height-rightmenu__button;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
-    -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px $red;
-    box-shadow: 3px 4px 10px black, inset -5px -1px 2px $red;
+    -webkit-box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px $red;
+    -moz-box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px $red;
+    box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px $red;
     &.active {
       background-color: $color-active;
       @extend .rightmenu__button:hover;
@@ -347,9 +351,9 @@ body {
   }
   &__button:hover {
     font-size: 170%;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px black, inset -5px -1px 3px $red;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px $red;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px $red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px $red;
     -webkit-transition: all .1s ease 0s;
     -moz-transition: all .1s ease 0s;
     -o-transition: all .1s ease 0s;
@@ -616,34 +620,64 @@ body {
     padding: 30px;
     td {
       padding: 7px;
+      min-width: 150px;
     }
     caption {
       text-align: center;
       font-family: "Tahoma", sans-serif;
       font-size: 200%;
-      color: #9a9a9a;
+      color: #8c8c8c;
       font-weight: 700;
-      padding: 5px;
+      padding: 20px;
     }
     thead {
-      tr {
-        background-color: #cccccc;
-      }
+      border-bottom: 2px #a5a5a5 solid;
+      text-align: center;
+      color: #5b5b5b;
+      background-color: #d7d7d7;
+      font-weight: 700;
+      font-size: 80%;
+        tr{
+          td{
+            padding: 15px;
+          }
+        }
     }
     tbody {
+      a{
+        color: $red;
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 105%;
+      }
+      font-size: 90%;
+      text-align: center;
+      color: #5b5b5b;
       input {
-        width: 50%;
+        width: 30%;
+        text-align: end;
+      }
+      button{
+        margin-left: 5px;
+        border-radius: 3px;
+        padding: 4px;
       }
       tr:nth-child(2n+1) {
         background-color: whitesmoke;
       }
       tr:nth-child(2n) {
-        background-color: #cccccc;
+        background-color: #e4e4e4;
       }
     }
     tfoot {
-      td {
-        text-align: end;
+      border-top: 2px #a5a5a5 solid;
+      font-weight: 700;
+      text-align: end;
+      tr{
+        td{
+          background-color: #d7d7d7;
+          padding: 10px 70px;
+        }
       }
     }
   }
@@ -652,7 +686,7 @@ body {
 .footer {
   padding: 12px;
   margin: 50px 0 0;
-  //background-color: #f7f7f7;
+  background-color: #dfdfdf;
   &__navbar {
     a {
       color: red;
