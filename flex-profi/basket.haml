@@ -61,7 +61,7 @@
       .main__header Оформление заказа
       .basket
         %table.basket__table
-          %caption Корзина
+          -#%caption Корзина
           %thead
             %tr
               %td.text-align--start Название
@@ -196,10 +196,14 @@
           %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
           %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
           %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-11 Группа 11
-        .rightmenu__submenu.rightmenu__submenu-11
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
     .footer
+      .footer__navbar
+        %a.begin{:href => "#"} Начало ...
+        .footer__navbar--center
+          %a.back{:href => "#"} < Назад	&#160;	&#160;	&#160;
+          %a{:href => "#"} 1
+          %a{:href => "#"} 2
+          %a.current{:href => "#"} 3
+          %a{:href => "#"} 4
+          %a.forward{:href => "#"} 	&#160;	&#160;	&#160; Вперед >
+        %a.end{:href => "#"} ... Конец
