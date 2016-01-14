@@ -1,6 +1,6 @@
 $pink-bg: #ffbdc6;
 $card-color: rgba(255, 255, 255, 0.6);
-$red: #b20019;
+$red: #c0001b;
 $color-arrow: #ff7c57;
 $color-active: rgba(255, 0, 102, 0.36);
 $height-navbut: 35px;
@@ -44,10 +44,15 @@ $height-rightmenu__button--phone: 60px;
   -webkit-order: $val;
   order: $val;
 }
-.text-align--start{
+
+.text-align--start {
   text-align: start;
 }
-.button--delete{
+.text-align--center {
+  text-align: center;
+}
+
+.button--delete {
   font-weight: 900;
   font-family: Tahoma;
 }
@@ -277,9 +282,7 @@ body {
 }
 
 .main {
-  @include flexbox();
-  flex-grow: 1;
-  top: 80px;
+  top: 75px;
   position: relative;
   .breadcrumbs {
     position: absolute;
@@ -299,6 +302,10 @@ body {
       color: $red;
     }
   }
+  .main--flex {
+    @include flexbox();
+    flex-grow: 1;
+  }
 
   .main__left {
     @include flexbox();
@@ -314,15 +321,29 @@ body {
     flex-grow: 1;
   }
   .main__header {
-    position: absolute;
-    right: 150px;
-    top: -58px;
+    margin-top: -60px;
     width: 100%;
     text-align: center;
     font-family: serif;
     font-size: 220%;
     font-weight: 600;
     color: #8f0000;
+  }
+  .pagination {
+    padding: 12px;
+    background-color: #dfdfdf;
+    width: 100%;
+    a {
+      color: red;
+      font-weight: 700;
+    }
+    @include flexbox();
+    justify-content: space-between;
+    &--center {
+      a {
+
+      }
+    }
   }
 }
 
@@ -346,9 +367,9 @@ body {
     line-height: $height-rightmenu__button;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    -webkit-box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px $red;
-    -moz-box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px $red;
-    box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px $red;
+    -webkit-box-shadow: 3px 3px 15px #737373, inset -5px -1px 2px $red;
+    -moz-box-shadow: 3px 3px 15px #737373, inset -5px -1px 2px $red;
+    box-shadow: 3px 3px 15px #737373, inset -5px -1px 2px $red;
     &.active {
       background-color: $color-active;
       @extend .rightmenu__button:hover;
@@ -380,7 +401,7 @@ body {
       position: relative;
       max-height: 600px;
     }
-    position: absolute;
+    position: relative;
     left: 5.5%;
     z-index: 3;
     width: 95%;
@@ -587,24 +608,27 @@ body {
 .article {
   @include flexbox();
   flex-basis: 80%;
-  flex-grow: 1;
+  flex-grow: 0;
+  margin-top: 10px;
   &__img {
     flex-basis: 50%;
     flex-grow: 2;
     img {
       display: block;
-      width: 100%;
-      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
     }
   }
   &__text {
-    margin-left: 30px;
     flex-basis: 50%;
     flex-grow: 2;
     font-family: "Tahoma", sans-serif;
+    //background-color: yellow;
     h1 {
       font-size: 300%;
       margin: 25px 30px 5px 0;
+
     }
     h2 {
       font-size: 270%;
@@ -619,9 +643,29 @@ body {
 .basket {
   flex-grow: 4;
   flex-basis: 78%;
+  h1{
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    font-size: 200%;
+    color: #8c8c8c;
+    font-weight: 700;
+    padding: 20px;
+  }
   .basket__table {
     margin: 30px auto;
     padding: 30px;
+    position: relative;
+    .table__img{
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+      display: none;
+      position: absolute;
+      height: 50%;
+      min-height: 200px;
+      
+    }
     td {
       padding: 7px;
       min-width: 150px;
@@ -641,18 +685,21 @@ body {
       background-color: #d7d7d7;
       font-weight: 700;
       font-size: 80%;
-        tr{
-          td{
-            padding: 15px;
-          }
+      tr {
+        td {
+          padding: 15px;
         }
+      }
     }
     tbody {
-      a{
+      a {
         color: $red;
         text-decoration: underline;
         font-weight: 700;
         font-size: 105%;
+        &:hover ~ .table__img{
+          display: block;
+        }
       }
       font-size: 90%;
       text-align: center;
@@ -661,7 +708,7 @@ body {
         width: 30%;
         text-align: end;
       }
-      button{
+      button {
         margin-left: 5px;
         border-radius: 3px;
         padding: 4px;
@@ -677,19 +724,58 @@ body {
       border-top: 2px #a5a5a5 solid;
       font-weight: 700;
       text-align: end;
-      tr{
-        td{
+      tr {
+        td {
           background-color: #d7d7d7;
           padding: 10px 70px;
         }
       }
     }
   }
+  .buyer__info, .order{
+    margin: 20px auto 50px;
+    max-width: 900px;
+    h4{
+      font-family: "Tahoma", sans-serif;
+      font-size: 140%;
+      color: #606060;
+      font-weight: 700;
+    }
+    input{
+      padding: 2px;
+      border-radius: 1px;
+    }
+    textarea{
+      padding: 5px;
+    }
+  }
+  button.confirm{
+    display: block;
+    background: linear-gradient(to bottom, red, $red);
+    margin: 0 auto 100px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    -webkit-box-shadow: 0 0 8px black;
+    -moz-box-shadow: 0 0 8px black;
+    box-shadow: 0 0 18px black;
+    &:active{
+      background: linear-gradient(to bottom, #e10000, #b80000) !important;
+      margin: 5px auto 100px;
+      -webkit-box-shadow: 0 0 2px black;
+      -moz-box-shadow: 0 0 2px black;
+      box-shadow: inset 0 0 10px #5d5d5d;
+    }
+  }
 }
 
 .footer {
   padding: 12px;
-  margin: 80px 0 0;
+  height: 100px;
   background-color: #dfdfdf;
   &__navbar {
     a {

@@ -61,7 +61,7 @@
       .main__header Оформление заказа
       .basket
         %table.basket__table
-          -#%caption Корзина
+          %caption Корзина
           %thead
             %tr
               %td.text-align--start Название
@@ -73,6 +73,7 @@
             %tr
               %td.text-align--start
                 %a{:href => "#"} Latin Night
+                %img.table__img{:src => "http://farmasi-inform.com/sites/default/files/1/40_lak_ukrepitel.jpg"}
                 %br
                 Туалетная вода:
                 %br
@@ -88,6 +89,7 @@
             %tr
               %td.text-align--start
                 %a{:href => "#"} Latin Night
+                %img.table__img{:src => "http://farmasi-inform.com/sites/default/files/1/40_lak_ukrepitel.jpg"}
                 %br
                 Туалетная вода:
                 %br
@@ -103,6 +105,7 @@
             %tr
               %td.text-align--start
                 %a{:href => "#"} Latin Night
+                %img.table__img{:src => "http://farmasi-inform.com/sites/default/files/1/40_lak_ukrepitel.jpg"}
                 %br
                 Туалетная вода:
                 %br
@@ -118,92 +121,60 @@
           %tfoot
             %tr
               %td{:colspan => "5"} Итого: 1888 руб.
-
-      .main__rightmenu.rightmenu
-        %a.rightmenu__button.rightmenu__button-1.active Группа 1
-        .rightmenu__submenu.rightmenu__submenu-1.active
-          %a.rightmenu__submenu__button.rightmenu__submenu__button-1{:href => "#"} Подгруппа 1
-          .rightmenu__subsubmenu.rightmenu__subsubmenu-1
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 1
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
-          %a.rightmenu__submenu__button.rightmenu__submenu__button-2.active{:href => "#"} Подгруппа 2
-          .rightmenu__subsubmenu.rightmenu__subsubmenu-2.active
-            %a.rightmenu__subsubmenu__button.active{:href => "#"} Подподгруппа 1
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
-          %a.rightmenu__submenu__button.rightmenu__submenu__button-3{:href => "#"} Подгруппа 3
-          .rightmenu__subsubmenu.rightmenu__subsubmenu-3
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 1
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
-          %a.rightmenu__submenu__button.rightmenu__submenu__button-4{:href => "#"} Подгруппа 4
-          .rightmenu__subsubmenu.rightmenu__subsubmenu-4
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 1
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 2
-            %a.rightmenu__subsubmenu__button{:href => "#"} Подподгруппа 3
-        %a.rightmenu__button.rightmenu__button-2 Группа 2
-        .rightmenu__submenu.rightmenu__submenu-2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-3 Группа 3
-        .rightmenu__submenu.rightmenu__submenu-3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-4 Группа 4
-        .rightmenu__submenu.rightmenu__submenu-4
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-5 Группа 5
-        .rightmenu__submenu.rightmenu__submenu-5
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-6 Группа 6
-        .rightmenu__submenu.rightmenu__submenu-6
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-7 Группа 7
-        .rightmenu__submenu.rightmenu__submenu-7
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-8 Группа 8
-        .rightmenu__submenu.rightmenu__submenu-8
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-9 Группа 9
-        .rightmenu__submenu.rightmenu__submenu-9
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
-        %a.rightmenu__button.rightmenu__button-10 Группа 10
-        .rightmenu__submenu.rightmenu__submenu-10
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 1
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 2
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 3
-          %a.rightmenu__submenu__button{:href => "#"} Подгруппа 4
+        %h1 Ваши координаты
+        %hr
+        %form
+          .buyer__info
+            %br
+            %h4 Как Вас зовут?
+            %br
+            Фамилия:
+            %input{:type => "text", :maxlength => "20"}
+            %br
+            %br
+            Имя:
+            %input{:type => "text", :maxlength => "20"}
+            %br
+            %br
+            %h4 Как с Вами связаться?
+            %br
+            Телефон:
+            %input{:type => "tel", :pattern => "[^a-zA-Zа-яА-ЯёЁ]+"}
+            %br
+            %br
+            %br
+            %hr
+            %hr
+          .order
+            %h4 Куда доставить Ваш заказ?
+            %br
+            Адрес:
+            %input{:type => "text", :maxlength => "50"}
+            %br
+            %br
+            %h4 Тип доставки:
+            %br
+            %select
+              %option Самовывоз
+              %option На муле
+              %option На осле
+              %option На коне
+            %br
+            %br
+            %h4 Способ оплаты:
+            %br
+            %select
+              %option Деньгами
+              %option За спасибо
+              %option Дочкой
+              %option Ромом
+            %br
+            %br
+            %h4 Оставите комментарий к заказу?
+            %br
+            %textarea{:cols => "60", :rows => "6", :placeholder => "Комментарий..."}
+            %br
+            %br
+          %hr
+          %button.confirm{:type => "submit"} Подтвердить заказ
     .footer
-      .footer__navbar
-        %a.begin{:href => "#"} Начало ...
-        .footer__navbar--center
-          %a.back{:href => "#"} < Назад	&#160;	&#160;	&#160;
-          %a{:href => "#"} 1
-          %a{:href => "#"} 2
-          %a.current{:href => "#"} 3
-          %a{:href => "#"} 4
-          %a.forward{:href => "#"} 	&#160;	&#160;	&#160; Вперед >
-        %a.end{:href => "#"} ... Конец

@@ -2,6 +2,9 @@
 .text-align--start {
   text-align: start; }
 
+.text-align--center {
+  text-align: center; }
+
 .button--delete {
   font-weight: 900;
   font-family: Tahoma; }
@@ -77,7 +80,7 @@ body {
       font-family: "Tahoma", sans-serif;
       font-weight: 400; }
       .header__image .basket--widget a {
-        color: #b20019;
+        color: #c0001b;
         text-decoration: underline;
         font-size: 110%;
         text-shadow: #471d20 0 0 0.5px; }
@@ -85,7 +88,7 @@ body {
           text-decoration: none;
           text-shadow: #826570 0 0 3px; }
       .header__image .basket--widget span {
-        color: #b20019;
+        color: #c0001b;
         font-weight: 600; }
     .header__image .search {
       float: right;
@@ -128,7 +131,7 @@ body {
     .header__navbar .navbar__button {
       box-shadow: black 0 2px 3px;
       display: block;
-      background: linear-gradient(#e50020, #b20019);
+      background: linear-gradient(#f30022, #c0001b);
       position: relative;
       z-index: 3;
       flex-grow: 1;
@@ -145,7 +148,7 @@ body {
       border-left: none; }
     .header__navbar .navbar__button:hover {
       color: #e6e6e6;
-      background: linear-gradient(#b20019, #7f0012); }
+      background: linear-gradient(#c0001b, #8d0014); }
     .header__navbar .navbar__submenu {
       display: -webkit-box;
       display: -moz-box;
@@ -273,13 +276,7 @@ body {
       transition: top 0.5s cubic-bezier(0.5, 1.8, 0.2, 0.5) 0s; }
 
 .main {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-grow: 1;
-  top: 80px;
+  top: 75px;
   position: relative; }
   .main .breadcrumbs {
     position: absolute;
@@ -295,7 +292,14 @@ body {
       font-weight: 700;
       font-size: 90%; }
     .main .breadcrumbs a:last-child {
-      color: #b20019; }
+      color: #c0001b; }
+  .main .main--flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-grow: 1; }
   .main .main__left {
     display: -webkit-box;
     display: -moz-box;
@@ -312,15 +316,26 @@ body {
     flex-basis: 22%;
     flex-grow: 1; }
   .main .main__header {
-    position: absolute;
-    right: 150px;
-    top: -58px;
+    margin-top: -60px;
     width: 100%;
     text-align: center;
     font-family: serif;
     font-size: 220%;
     font-weight: 600;
     color: #8f0000; }
+  .main .pagination {
+    padding: 12px;
+    background-color: #dfdfdf;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between; }
+    .main .pagination a {
+      color: red;
+      font-weight: 700; }
 
 .rightmenu {
   overflow: hidden;
@@ -330,7 +345,7 @@ body {
   .rightmenu__button, .rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__subsubmenu__button {
     position: relative;
     display: block;
-    border: solid 2px #b20019;
+    border: solid 2px #c0001b;
     margin: 0 0 -2px 0;
     height: 40px;
     cursor: pointer;
@@ -342,16 +357,16 @@ body {
     line-height: 40px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    -webkit-box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px #b20019;
-    -moz-box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px #b20019;
-    box-shadow: 3px 3px 20px #737373, inset -5px -1px 2px #b20019; }
+    -webkit-box-shadow: 3px 3px 15px #737373, inset -5px -1px 2px #c0001b;
+    -moz-box-shadow: 3px 3px 15px #737373, inset -5px -1px 2px #c0001b;
+    box-shadow: 3px 3px 15px #737373, inset -5px -1px 2px #c0001b; }
     .rightmenu__button.active, .active.rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .active.rightmenu__subsubmenu__button {
       background-color: rgba(255, 0, 102, 0.36); }
   .rightmenu__button:hover, .rightmenu__button.active, .active.rightmenu__submenu__button, .rightmenu__submenu .rightmenu__subsubmenu .active.rightmenu__subsubmenu__button, .rightmenu__submenu__button:hover, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__subsubmenu__button:hover {
     font-size: 170%;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px #b20019;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px #b20019;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px #b20019;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px #c0001b;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px #c0001b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 3px 4px 10px #737373, inset -5px -1px 3px #c0001b;
     -webkit-transition: all .1s ease 0s;
     -moz-transition: all .1s ease 0s;
     -o-transition: all .1s ease 0s;
@@ -477,7 +492,7 @@ body {
     -o-transition: max-height 1s ease .1s;
     transition: max-height 1s ease .1s; }
   .rightmenu__submenu, .rightmenu__submenu .rightmenu__subsubmenu {
-    position: absolute;
+    position: relative;
     left: 5.5%;
     z-index: 3;
     width: 95%;
@@ -499,9 +514,9 @@ body {
       height: 35px;
       line-height: 35px;
       text-align: left;
-      -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #b20019;
-      -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #b20019;
-      box-shadow: 3px 4px 5px black, inset -5px -1px 3px #b20019, inset 2px 1px 10px white; }
+      -webkit-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #c0001b;
+      -moz-box-shadow: 3px 4px 10px black, inset -5px -1px 3px #c0001b;
+      box-shadow: 3px 4px 5px black, inset -5px -1px 3px #c0001b, inset 2px 1px 10px white; }
     .rightmenu__submenu .rightmenu__submenu__button-1:hover ~ .rightmenu__subsubmenu-1, .rightmenu__submenu .rightmenu__subsubmenu .rightmenu__submenu__button-1:hover ~ .rightmenu__subsubmenu-1, .rightmenu__submenu .rightmenu__subsubmenu:hover {
       max-height: 300px;
       display: block;
@@ -709,16 +724,17 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-basis: 80%;
-  flex-grow: 1; }
+  flex-grow: 0;
+  margin-top: 10px; }
   .article__img {
     flex-basis: 50%;
     flex-grow: 2; }
     .article__img img {
       display: block;
-      width: 100%;
-      height: 100%; }
+      max-width: 100%;
+      max-height: 100%;
+      height: auto; }
   .article__text {
-    margin-left: 30px;
     flex-basis: 50%;
     flex-grow: 2;
     font-family: "Tahoma", sans-serif; }
@@ -734,9 +750,26 @@ body {
 .basket {
   flex-grow: 4;
   flex-basis: 78%; }
+  .basket h1 {
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    font-size: 200%;
+    color: #8c8c8c;
+    font-weight: 700;
+    padding: 20px; }
   .basket .basket__table {
     margin: 30px auto;
-    padding: 30px; }
+    padding: 30px;
+    position: relative; }
+    .basket .basket__table .table__img {
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+      display: none;
+      position: absolute;
+      height: 50%;
+      min-height: 200px; }
     .basket .basket__table td {
       padding: 7px;
       min-width: 150px; }
@@ -761,10 +794,12 @@ body {
       text-align: center;
       color: #5b5b5b; }
       .basket .basket__table tbody a {
-        color: #b20019;
+        color: #c0001b;
         text-decoration: underline;
         font-weight: 700;
         font-size: 105%; }
+        .basket .basket__table tbody a:hover ~ .table__img {
+          display: block; }
       .basket .basket__table tbody input {
         width: 30%;
         text-align: end; }
@@ -783,10 +818,43 @@ body {
       .basket .basket__table tfoot tr td {
         background-color: #d7d7d7;
         padding: 10px 70px; }
+  .basket .buyer__info, .basket .order {
+    margin: 20px auto 50px;
+    max-width: 900px; }
+    .basket .buyer__info h4, .basket .order h4 {
+      font-family: "Tahoma", sans-serif;
+      font-size: 140%;
+      color: #606060;
+      font-weight: 700; }
+    .basket .buyer__info input, .basket .order input {
+      padding: 2px;
+      border-radius: 1px; }
+    .basket .buyer__info textarea, .basket .order textarea {
+      padding: 5px; }
+  .basket button.confirm {
+    display: block;
+    background: linear-gradient(to bottom, red, #c0001b);
+    margin: 0 auto 100px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    -webkit-box-shadow: 0 0 8px black;
+    -moz-box-shadow: 0 0 8px black;
+    box-shadow: 0 0 18px black; }
+    .basket button.confirm:active {
+      background: linear-gradient(to bottom, #e10000, #b80000) !important;
+      margin: 5px auto 100px;
+      -webkit-box-shadow: 0 0 2px black;
+      -moz-box-shadow: 0 0 2px black;
+      box-shadow: inset 0 0 10px #5d5d5d; }
 
 .footer {
   padding: 12px;
-  margin: 80px 0 0;
+  height: 100px;
   background-color: #dfdfdf; }
   .footer__navbar {
     display: -webkit-box;

@@ -18,6 +18,9 @@ button, input{
     outline: none;
     border: none;
 }
+input{
+    cursor: text;
+}
 button{
     cursor: pointer;
 }
@@ -75,6 +78,9 @@ input, textarea, select {
     font-size: inherit;
     font-weight: inherit;
     *font-size: 100%
+}
+textarea{
+    cursor: auto;
 }
 
 legend {
