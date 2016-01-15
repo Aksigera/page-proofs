@@ -26,8 +26,8 @@
           <file leaf-file-name="index.haml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/corporate blue homepage/index.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.730769">
-                  <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+                <state vertical-scroll-proportion="-11.115385">
+                  <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -36,8 +36,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/corporate blue homepage/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.07614782">
-                  <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.27546296">
+                  <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -95,10 +95,10 @@
         <option value="$PROJECT_DIR$/corporate blue homepage/SASS-grid/grid.scss" />
         <option value="$PROJECT_DIR$/corporate blue homepage/haml.html" />
         <option value="$PROJECT_DIR$/corporate blue homepage/haml.haml" />
-        <option value="$PROJECT_DIR$/corporate blue homepage/index.html" />
         <option value="$PROJECT_DIR$/corporate blue homepage/styles.css" />
-        <option value="$PROJECT_DIR$/corporate blue homepage/index.haml" />
         <option value="$PROJECT_DIR$/corporate blue homepage/styles.scss" />
+        <option value="$PROJECT_DIR$/corporate blue homepage/index.html" />
+        <option value="$PROJECT_DIR$/corporate blue homepage/index.haml" />
       </list>
     </option>
   </component>
@@ -507,22 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/corporate blue homepage/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corporate blue homepage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07614782">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/corporate blue homepage/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8622685">
@@ -530,6 +514,22 @@
           <folding>
             <element signature="e#7741#55226#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corporate blue homepage/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corporate blue homepage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27546296">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
