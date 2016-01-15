@@ -2,7 +2,8 @@
 
 html {
     color: #000;
-    background: #FFF
+    background: #FFF;
+    font-size:16px;
 }
 
 body,label, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
@@ -15,9 +16,17 @@ body,label, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 }
 button, input{
     outline: none;
+    border: none;
+}
+input{
+    cursor: text;
+}
+button{
+    cursor: pointer;
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 table {
@@ -69,6 +78,9 @@ input, textarea, select {
     font-size: inherit;
     font-weight: inherit;
     *font-size: 100%
+}
+textarea{
+    cursor: auto;
 }
 
 legend {
